@@ -15,5 +15,7 @@ public class CnnHome extends Base {
         Thread.sleep(4000);
         driver.navigate().back();
         Thread.sleep(4000);
+
+        System.out.println("Marvin");
     }
 }
