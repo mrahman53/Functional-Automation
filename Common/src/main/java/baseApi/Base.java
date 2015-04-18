@@ -59,12 +59,12 @@ public class Base {
          if(browserName.equalsIgnoreCase("firefox")){
              driver = new FirefoxDriver();
          } else if(browserName.equalsIgnoreCase("chrome")){
-             System.setProperty("webdriver.chrome.driver", "C:\\Users\\rrt\\java-selenium\\chrome-driver\\chromedriver.exe");
+             System.setProperty("webdriver.chrome.driver", "./Common/selenium-driver/chromedriver.exe");
              driver = new ChromeDriver();
          }else if(browserName.equalsIgnoreCase("safari")){
              driver = new SafariDriver();
          } else if(browserName.equalsIgnoreCase("IE")){
-             System.setProperty("webdriver.ie.driver" , "C:\\Users\\rrt\\java-selenium\\IEDriver\\IEDriverServer.exe");
+             System.setProperty("webdriver.ie.driver" , "./Common/selenium-driver/IEDriverServer.exe");
              driver = new InternetExplorerDriver();
          }
 
