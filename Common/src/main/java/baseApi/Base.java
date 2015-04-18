@@ -33,7 +33,7 @@ public class Base {
     @Parameters ({"useSauceLabs","userName", "key","os","browserName","browserVersion","url"})
     @BeforeMethod
     public void setUp(@Optional("false")boolean useSauceLabs,@Optional("rahmanww")String userName,
-                      @Optional("ssk")String key, @Optional("Win 8")String os,@Optional("firefox") String browserName,
+                      @Optional("ssk")String key, @Optional("WIN8")String os,@Optional("firefox") String browserName,
                       @Optional("35")String browserVersion,@Optional("http://piit.us") String url)throws IOException{
         if(useSauceLabs == true){
             setUpCloudEnviornment(userName,key,os,browserName,browserVersion,url);
