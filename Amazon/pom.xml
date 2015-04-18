@@ -19,6 +19,25 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.17</version>
+                <configuration>
+                <suiteXmlFiles>
+                    <suiteXmlFile>target/test-classes/AmazonSmokeTestRunner.xml</suiteXmlFile>
+                </suiteXmlFiles>
+                    <redirectTestOutputToFile>true</redirectTestOutputToFile>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!--<properties>-->
+        <!--<AmazonTestRunner>AmazonSmokeTestRunner.xml</AmazonTestRunner>-->
+    <!--</properties>-->
 
 
 </project>

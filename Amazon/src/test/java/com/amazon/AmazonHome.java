@@ -14,7 +14,7 @@ import java.util.List;
 public class AmazonHome extends Base {
 
     @Test
-       public void homePageOfAmazon()throws InterruptedException{
+    public void homePageOfAmazon()throws InterruptedException{
         System.out.println(driver.getCurrentUrl());
         typeAndEnterByCss("#twotabsearchtextbox", "book");
         sleepFor(4);
