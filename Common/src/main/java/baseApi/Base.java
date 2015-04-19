@@ -12,6 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -137,5 +138,11 @@ public class Base {
         WebElement element = driver.findElement(By.cssSelector(locator));
         Actions action = new Actions(driver);
         Actions hover = action.moveToElement(element);
+    }
+
+    public void selectElementByVisibleText(String locator, String value){
+        WebElement element = driver.findElement(By.cssSelector(locator));
+        Select select = new Select(element);
+        select.selectByVisibleText(value);
     }
 }
