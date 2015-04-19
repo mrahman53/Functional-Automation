@@ -14,7 +14,7 @@
 
 <test name = "Amazon Home Page ">
     <classes>
-        <class name="com.amazon.AmazonHome"/>
+        <!--<class name="com.amazon.AmazonHome"/>-->
         <class name="com.amazon.SignUp" />
 
 
