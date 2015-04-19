@@ -3,7 +3,7 @@
 <suite name="Amazon test on Web browser" >
 
 
-    <parameter name = "useSauceLabs" value = "false"/>
+    <parameter name = "useSauceLabs" value = "true"/>
     <parameter name = "userName" value = "rahmanww"/>
     <parameter name = "key" value = "6f132866-de72-43fd-b49a-e6f81d26bfe3"/>
     <parameter name = "os" value = "WIN8"/>
