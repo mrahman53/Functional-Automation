@@ -28,6 +28,7 @@
         <module name="Cnn" />
         <module name="Common" />
         <module name="Facebook" />
+        <module name="RandomApp" />
       </profile>
     </annotationProcessing>
   </component>

@@ -11,5 +11,12 @@
 
     <artifactId>ChaseBank</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>FunctionalTestingFramework</groupId>
+            <artifactId>Common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

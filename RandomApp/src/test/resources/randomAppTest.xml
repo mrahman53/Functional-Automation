@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="W3schools.com test on Web browser" >
+
+    <parameter name = "useSauceLabs" value = "false"/>
+    <parameter name = "userName" value = "rahmanww"/>
+    <parameter name = "key" value = "6f132866-de72-43fd-b49a-e6f81d26bfe3"/>
+    <parameter name = "os" value = "WIN8"/>
+    <parameter name = "browserName" value = "firefox"/>
+    <parameter name = "browserVersion" value = "37"/>
+    <parameter name = "url" value = "http://www.w3schools.com/sql/sql_select.asp"/>
+
+    <test name = " Cnn Home Page ">
+        <classes>
+            <class name="TableCell"/>
+        </classes>
+    </test>
+
+</suite>

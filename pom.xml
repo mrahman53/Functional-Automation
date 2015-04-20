@@ -14,6 +14,7 @@
         <module>Amazon</module>
         <module>Facebook</module>
         <module>ChaseBank</module>
+        <module>RandomApp</module>
     </modules>
 
     <dependencyManagement>
@@ -36,7 +37,65 @@
             <version>2.45.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.35</version>
+        </dependency>
     </dependencies>
     </dependencyManagement>
+
+    <profiles>
+        <!--<profile>-->
+         <!--<id>all</id>-->
+            <!--<modules>-->
+                <!--<module>Common</module>-->
+                <!--<module>Cnn</module>-->
+                <!--<module>Amazon</module>-->
+                <!--<module>Facebook</module>-->
+                <!--<module>ChaseBank</module>-->
+                <!--<module>RandomApp</module>-->
+            <!--</modules>-->
+            <!--<activation>-->
+                <!--<activeByDefault>true</activeByDefault>-->
+            <!--</activation>-->
+        <!--</profile>-->
+        <profile>
+            <id>amazon-app</id>
+            <modules>
+               <module>Common</module>
+               <module>Amazon</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>cnn-app</id>
+            <modules>
+                <module>Common</module>
+                <module>Cnn</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>facebook-app</id>
+            <modules>
+                <module>Common</module>
+                <module>Facebook</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>random-app</id>
+            <modules>
+               <module>Common</module>
+               <module>RandomApp</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>chase-bank-app</id>
+            <modules>
+               <module>Common</module>
+               <module>ChaseBank</module>
+            </modules>
+        </profile>
+    </profiles>
+
 
 </project>
