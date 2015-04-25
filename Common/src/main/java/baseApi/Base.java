@@ -99,6 +99,7 @@ public class Base {
     }
 
     public void typeAndEnterByCss(String locator, String value){
+        driver.findElement(By.cssSelector(locator)).clear();
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
     }
     public void typeAndEnterByXpath(String locator, String value){
