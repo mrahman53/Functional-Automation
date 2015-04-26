@@ -1,9 +1,7 @@
 package baseApi;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -12,12 +10,16 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -110,6 +112,11 @@ public class Base {
 
         return element;
     }
+    public List<WebElement> getWebElementsByXpath(String locator){
+        List<WebElement> element = driver.findElements(By.xpath(locator));
+
+        return element;
+    }
 
     public List<String> getListOfTextByCss(String locator){
         List<WebElement> element = driver.findElements(By.cssSelector(locator));
@@ -146,4 +153,45 @@ public class Base {
         Select select = new Select(element);
         select.selectByVisibleText(value);
     }
+    public void okAlert(){
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+    }
+    public void cancelAlert(){
+        Alert alert = driver.switchTo().alert();
+        alert.dismiss();
+    }
+    public void iframeHandle(WebElement element){
+        driver.switchTo().frame(element);
+    }
+    public void getLinks(String locator){
+        driver.findElement(By.linkText(locator)).findElement(By.tagName("a")).getText();
+    }
+    public void waitUntilVisible(By locator){
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+    public void waitUntilClickable(By locator){
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+    public void waitUntilToBeSelected(By locator){
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        Boolean element = wait.until(ExpectedConditions.elementToBeSelected(locator));
+    }
+
+    public void takeScreenShot() throws IOException{
+        File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(file, new File("screenShots.png"));
+    }
+    public void navigateBack(){
+        driver.navigate().back();
+    }
+
+    public WebDriver clickByWebElement(WebElement element){
+        element.click();
+
+        return driver;
+    }
+
 }

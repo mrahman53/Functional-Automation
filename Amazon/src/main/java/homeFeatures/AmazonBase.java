@@ -72,9 +72,4 @@ public class AmazonBase extends Base {
         return menuList;
 
     }
-
-
-
-
-
 }

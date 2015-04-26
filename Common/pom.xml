@@ -34,6 +34,18 @@
             <artifactId>poi</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.jayway.restassured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.gdata</groupId>
+            <artifactId>core</artifactId>
+        </dependency>
+
+
 
     </dependencies>
 

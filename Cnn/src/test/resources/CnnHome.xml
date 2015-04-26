@@ -12,7 +12,7 @@
 
     <test name = " Cnn Home Page ">
         <classes>
-            <class name="Search"/>
+            <class name="TechNewsContents"/>
         </classes>
     </test>
 
