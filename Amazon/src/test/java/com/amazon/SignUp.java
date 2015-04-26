@@ -12,7 +12,7 @@ import java.io.IOException;
  */
 public class SignUp extends AmazonBase {
     public DataReader dr = new DataReader();
-    String path = "C:\\Users\\rrt\\workspace-March2015\\Functional-Automation\\Amazon\\data\\file1.xls";
+    String path = "Amazon\\data\\file1.xls";
 
     @Test
     public void signIn()throws IOException,InterruptedException{

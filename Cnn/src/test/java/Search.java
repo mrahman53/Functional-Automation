@@ -9,7 +9,7 @@ import java.io.IOException;
  */
 public class Search extends Base {
     public DataReader dr = new DataReader();
-    String path = "C:\\Users\\rrt\\workspace-March2015\\Functional-Automation\\Cnn\\data\\file1.xls";
+    String path = "Cnn\\data\\file1.xls";
     @Test
     public void searchNews()throws IOException{
         String [][] value = dr.fileReader(path);
