@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 /**
  * Created by rrt on 4/26/2015.
  */
-public class TechNewsContents extends CnnBase {
+    public class TechNewsContents extends CnnBase {
 
     @Test
     public void getTechNews(){
@@ -13,9 +13,6 @@ public class TechNewsContents extends CnnBase {
         String news = getTextByCss(".cd__content");
         System.out.println(news);
 
-
     }
-
-
 
 }
