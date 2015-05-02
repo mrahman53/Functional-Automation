@@ -4,13 +4,25 @@ import baseApi.Base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 /**
  * Created by rrt on 4/26/2015.
  */
 public class Pages extends Base {
 
+    public WebDriver driver = null;
 
+    public Pages(){
+
+    }
+
+    public WebElement clickTech(){
+        return new Pages().tech;
+    }
+    public WebElement clickWorld(){
+        return new Pages().world;
+    }
     public void clickByElement(WebElement element){
         element.click();
     }
@@ -24,7 +36,7 @@ public class Pages extends Base {
     public WebElement politics;
 
     @FindBy(xpath = ".//*[@id='nav-header']/nav/div/div[4]/ul/li[1]/div/ul/li[4]/a")
-    public static WebElement tech;
+    public WebElement tech;
 
     @FindBy(xpath = ".//*[@id='nav-header']/nav/div/div[4]/ul/li[1]/div/ul/li[5]/a")
     public WebElement health;
