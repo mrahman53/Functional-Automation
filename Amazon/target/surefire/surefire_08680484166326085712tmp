@@ -1,0 +1,8 @@
+#surefire_0
+#Sat Apr 25 10:26:01 EDT 2015
+AmazonTestRunner=AmazonSmokeTestRunner.xml
+user.dir=C\:\\Users\\rrt\\workspace-March2015\\Functional-Automation\\Amazon
+idea.version=14.0.3
+localRepository=C\:\\Users\\rrt\\.m2\\repository
+CnnTestRunner=CnnHome.xml
+basedir=C\:\\Users\\rrt\\workspace-March2015\\Functional-Automation\\Amazon

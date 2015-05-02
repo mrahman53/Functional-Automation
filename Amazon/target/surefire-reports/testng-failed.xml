@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Amazon test on Web browser]">
+  <parameter name="os" value="WIN8"/>
+  <parameter name="browserVersion" value="41"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="userName" value="rahmanww"/>
+  <parameter name="useSauceLabs" value="false"/>
+  <parameter name="key" value="6f132866-de72-43fd-b49a-e6f81d26bfe3"/>
+  <parameter name="url" value="http://www.amazon.com"/>
+  <test name="Amazon Home Page (failed)">
+    <classes>
+      <class name="com.amazon.Search">
+        <methods>
+          <include name="searchItems"/>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- com.amazon.Search -->
+    </classes>
+  </test> <!-- Amazon Home Page (failed) -->
+</suite> <!-- Failed suite [Amazon test on Web browser] -->

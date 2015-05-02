@@ -13,10 +13,6 @@ public class Pages extends Base {
 
     public WebDriver driver = null;
 
-    public Pages(){
-
-    }
-
     public WebElement clickTech(){
         return new Pages().tech;
     }

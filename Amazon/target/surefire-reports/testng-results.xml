@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Amazon test on Web browser" duration-ms="206954" started-at="2015-04-19T19:38:12Z" finished-at="2015-04-19T19:41:39Z">
+    <groups>
+    </groups>
+    <test name="Amazon Home Page " duration-ms="206954" started-at="2015-04-19T19:38:12Z" finished-at="2015-04-19T19:41:39Z">
+      <class name="com.amazon.Search">
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.amazon.Search@7bb2f811]" name="setUp" is-config="true" duration-ms="10825" started-at="2015-04-19T15:38:12Z" finished-at="2015-04-19T15:38:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rahmanww]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[6f132866-de72-43fd-b49a-e6f81d26bfe3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[WIN8]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[41]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[http://www.amazon.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchItems()[pri:0, instance:com.amazon.Search@7bb2f811]" name="searchItems" duration-ms="194792" started-at="2015-04-19T15:38:23Z" finished-at="2015-04-19T15:41:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItems -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.amazon.Search@7bb2f811]" name="cleanUp" is-config="true" duration-ms="1317" started-at="2015-04-19T15:41:38Z" finished-at="2015-04-19T15:41:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.amazon.Search -->
+    </test> <!-- Amazon Home Page  -->
+  </suite> <!-- Amazon test on Web browser -->
+</testng-results>
