@@ -7,7 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/Cnn/Cnn.iml" filepath="$PROJECT_DIR$/Cnn/Cnn.iml" />
       <module fileurl="file://$PROJECT_DIR$/Common/Common.iml" filepath="$PROJECT_DIR$/Common/Common.iml" />
       <module fileurl="file://$PROJECT_DIR$/Facebook/Facebook.iml" filepath="$PROJECT_DIR$/Facebook/Facebook.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Functional-Automation.iml" filepath="$PROJECT_DIR$/Functional-Automation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Functional-Testing.iml" filepath="$PROJECT_DIR$/Functional-Testing.iml" />
       <module fileurl="file://$PROJECT_DIR$/RandomApp/RandomApp.iml" filepath="$PROJECT_DIR$/RandomApp/RandomApp.iml" />
     </modules>
   </component>

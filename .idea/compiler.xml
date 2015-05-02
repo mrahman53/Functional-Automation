@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <option name="DEFAULT_COMPILER" value="Javac" />
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
@@ -31,5 +30,14 @@
         <module name="RandomApp" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Amazon" target="1.5" />
+      <module name="ChaseBank" target="1.5" />
+      <module name="Cnn" target="1.5" />
+      <module name="Common" target="1.5" />
+      <module name="Facebook" target="1.5" />
+      <module name="Functional-Testing" target="1.5" />
+      <module name="RandomApp" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
