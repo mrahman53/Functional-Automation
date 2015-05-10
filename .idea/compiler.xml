@@ -23,22 +23,28 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="Amazon" />
         <module name="ChaseBank" />
         <module name="Cnn" />
         <module name="Common" />
         <module name="Facebook" />
         <module name="RandomApp" />
       </profile>
+      <profile default="false" name="Annotation profile for Amazon" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="Amazon" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Amazon" target="1.8" />
       <module name="ChaseBank" target="1.8" />
       <module name="Cnn" target="1.8" />
-      <module name="Common" target="1.5" />
-      <module name="Facebook" target="1.5" />
-      <module name="Functional-Testing" target="1.5" />
-      <module name="RandomApp" target="1.5" />
+      <module name="Common" target="1.8" />
+      <module name="Facebook" target="1.8" />
+      <module name="Functional-Testing" target="1.8" />
+      <module name="RandomApp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
