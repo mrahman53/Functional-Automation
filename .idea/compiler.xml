@@ -32,9 +32,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Amazon" target="1.5" />
-      <module name="ChaseBank" target="1.5" />
-      <module name="Cnn" target="1.5" />
+      <module name="Amazon" target="1.8" />
+      <module name="ChaseBank" target="1.8" />
+      <module name="Cnn" target="1.8" />
       <module name="Common" target="1.5" />
       <module name="Facebook" target="1.5" />
       <module name="Functional-Testing" target="1.5" />
